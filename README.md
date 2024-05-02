@@ -1,8 +1,6 @@
-# Repositório de Atividades de Python
+# Atividades de Python
 
-Este repositório contém todas as atividades e projetos de Python que desenvolvi ao longo dos meus estudos. Os trabalhos estão organizados por período acadêmico, com links diretos para cada arquivo hospedado no Google Drive.
-
-## Atividades Separadas por Período
+Este repositório contém todas as atividades e projetos de Python que fiz ao longo dos meus anos de faculdade. Os trabalhos estão organizados por período acadêmico e incluem links diretos para cada arquivo hospedado no Google Drive.
 
 
 ### Período 4
