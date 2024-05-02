@@ -1,0 +1,1211 @@
+[
+  {
+    "type": "database",
+    "name": "netflix"
+  },
+  {
+    "type": "table",
+    "name": "filmes_series",
+    "database": "netflix",
+    "data": [
+      {
+        "id": "1",
+        "Item": "Stranger Things",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Genero": "Drama, Fantasia, Terror",
+        "Pontuação": "9",
+        "Tipo": "série",
+        "Votos": "1"
+      },
+      {
+        "id": "2",
+        "Item": "13 Reasons Why",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Drama, Mistério, Suspense",
+        "Pontuação": "8",
+        "Votos": "314"
+      },
+      {
+        "id": "3",
+        "Item": "Orange Is the New Black",
+        "Classificação": "18",
+        "Duração": "59 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Crime, Drama",
+        "Pontuação": "8",
+        "Votos": "319"
+      },
+      {
+        "id": "4",
+        "Item": "Black Mirror",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Drama, Mistério, Ficção Científica",
+        "Pontuação": "9",
+        "Votos": "636"
+      },
+      {
+        "id": "5",
+        "Item": "Money Heist",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Ação, Crime, Drama",
+        "Pontuação": "8",
+        "Votos": "529"
+      },
+      {
+        "id": "6",
+        "Item": "Lucifer",
+        "Classificação": "15",
+        "Duração": "4,393 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Fantasia",
+        "Pontuação": "8",
+        "Votos": "354"
+      },
+      {
+        "id": "7",
+        "Item": "Narcos",
+        "Classificação": "15",
+        "Duração": "50 min",
+        "Tipo": "série",
+        "Genero": "Biografia, Crime, Drama",
+        "Pontuação": "9",
+        "Votos": "467"
+      },
+      {
+        "id": "8",
+        "Item": "Daredevil",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Ação, Crime, Drama",
+        "Pontuação": "9",
+        "Votos": "472"
+      },
+      {
+        "id": "9",
+        "Item": "Sense8",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Drama, Mistério, Ficção Científica",
+        "Pontuação": "8",
+        "Votos": "162"
+      },
+      {
+        "id": "10",
+        "Item": "Jessica Jones",
+        "Classificação": "15",
+        "Duração": "56 min",
+        "Tipo": "série",
+        "Genero": "Ação, Crime, Drama",
+        "Pontuação": "8",
+        "Votos": "226"
+      },
+      {
+        "id": "11",
+        "Item": "House of Cards",
+        "Classificação": "18",
+        "Duração": "50 min",
+        "Tipo": "série",
+        "Genero": "Drama",
+        "Pontuação": "9",
+        "Votos": "529"
+      },
+      {
+        "id": "12",
+        "Item": "The End of the F***ing World",
+        "Classificação": "15",
+        "Duração": "25 min",
+        "Tipo": "série",
+        "Genero": "Aventura, Comédia, Crime",
+        "Pontuação": "8",
+        "Votos": "218"
+      },
+      {
+        "id": "13",
+        "Item": "Dark",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Mistério",
+        "Pontuação": "9",
+        "Votos": "440"
+      },
+      {
+        "id": "14",
+        "Item": "Sex Education",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Romance",
+        "Pontuação": "8",
+        "Votos": "348"
+      },
+      {
+        "id": "15",
+        "Item": "Elite",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Suspense",
+        "Pontuação": "7",
+        "Votos": "90"
+      },
+      {
+        "id": "16",
+        "Item": "You",
+        "Classificação": "15",
+        "Duração": "45 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Romance",
+        "Pontuação": "8",
+        "Votos": "297"
+      },
+      {
+        "id": "17",
+        "Item": "Chilling Adventures of Sabrina",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Drama, Fantasia, Terror",
+        "Pontuação": "7",
+        "Votos": "107"
+      },
+      {
+        "id": "18",
+        "Item": "The OA",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Drama, Fantasia, Mistério",
+        "Pontuação": "8",
+        "Votos": "115"
+      },
+      {
+        "id": "19",
+        "Item": "The Punisher",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Ação, Crime, Drama",
+        "Pontuação": "8",
+        "Votos": "263"
+      },
+      {
+        "id": "20",
+        "Item": "The Umbrella Academy",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Ação, Aventura, Comédia",
+        "Pontuação": "8",
+        "Votos": "273"
+      },
+      {
+        "id": "21",
+        "Item": "Iron Fist",
+        "Classificação": "18",
+        "Duração": "55 min",
+        "Tipo": "série",
+        "Genero": "Ação, Aventura, Crime",
+        "Pontuação": "6",
+        "Votos": "139"
+      },
+      {
+        "id": "22",
+        "Item": "Luke Cage",
+        "Classificação": "15",
+        "Duração": "55 min",
+        "Tipo": "série",
+        "Genero": "Ação, Crime, Drama",
+        "Pontuação": "7",
+        "Votos": "139"
+      },
+      {
+        "id": "23",
+        "Item": "Atypical",
+        "Classificação": "12",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "8",
+        "Votos": "103"
+      },
+      {
+        "id": "24",
+        "Item": "Big Mouth",
+        "Classificação": "18",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Animação, Comédia, Romance",
+        "Pontuação": "8",
+        "Votos": "89"
+      },
+      {
+        "id": "25",
+        "Item": "The Rain",
+        "Classificação": "15",
+        "Duração": "45 min",
+        "Tipo": "série",
+        "Genero": "Drama, Ficção Científica, Suspense",
+        "Pontuação": "6",
+        "Votos": "41"
+      },
+      {
+        "id": "26",
+        "Item": "The Defenders",
+        "Classificação": "15",
+        "Duração": "50 min",
+        "Tipo": "série",
+        "Genero": "Ação, Aventura, Crime",
+        "Pontuação": "7",
+        "Votos": "116"
+      },
+      {
+        "id": "27",
+        "Item": "The Crown",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Biografia, Drama, História",
+        "Pontuação": "9",
+        "Votos": "255"
+      },
+      {
+        "id": "28",
+        "Item": "A Series of Unfortunate Events",
+        "Classificação": "0",
+        "Duração": "1,164 min",
+        "Tipo": "série",
+        "Genero": "Aventura, Comédia, Drama",
+        "Pontuação": "8",
+        "Votos": "66"
+      },
+      {
+        "id": "29",
+        "Item": "Insatiable",
+        "Classificação": "15",
+        "Duração": "45 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Suspense",
+        "Pontuação": "7",
+        "Votos": "32"
+      },
+      {
+        "id": "30",
+        "Item": "Mindhunter",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Mistério",
+        "Pontuação": "9",
+        "Votos": "333"
+      },
+      {
+        "id": "31",
+        "Item": "3%",
+        "Classificação": "15",
+        "Duração": "49 min",
+        "Tipo": "série",
+        "Genero": "Ação, Drama, Ficção Científica",
+        "Pontuação": "7",
+        "Votos": "28"
+      },
+      {
+        "id": "32",
+        "Item": "Altered Carbon",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Ação, Drama, Ficção Científica",
+        "Pontuação": "8",
+        "Votos": "187"
+      },
+      {
+        "id": "33",
+        "Item": "The Haunting of Hill House",
+        "Classificação": "15",
+        "Duração": "572 min",
+        "Tipo": "série",
+        "Genero": "Drama, Terror, Mistério",
+        "Pontuação": "9",
+        "Votos": "286"
+      },
+      {
+        "id": "34",
+        "Item": "Santa Clarita Diet",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Terror",
+        "Pontuação": "8",
+        "Votos": "75"
+      },
+      {
+        "id": "35",
+        "Item": "Disenchantment",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Animação, Ação, Aventura",
+        "Pontuação": "7",
+        "Votos": "72"
+      },
+      {
+        "id": "36",
+        "Item": "BoJack Horseman",
+        "Classificação": "18",
+        "Duração": "25 min",
+        "Tipo": "série",
+        "Genero": "Animação, Comédia, Drama",
+        "Pontuação": "9",
+        "Votos": "186"
+      },
+      {
+        "id": "37",
+        "Item": "Girlboss",
+        "Classificação": "15",
+        "Duração": "26 min",
+        "Tipo": "série",
+        "Genero": "Comédia",
+        "Pontuação": "7",
+        "Votos": "19"
+      },
+      {
+        "id": "38",
+        "Item": "Ozark",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Suspense",
+        "Pontuação": "9",
+        "Votos": "344"
+      },
+      {
+        "id": "39",
+        "Item": "Lost in Space",
+        "Classificação": "12",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Aventura, Drama, Família",
+        "Pontuação": "7",
+        "Votos": "105"
+      },
+      {
+        "id": "40",
+        "Item": "Baby",
+        "Classificação": "15",
+        "Duração": "50 min",
+        "Tipo": "série",
+        "Genero": "Drama",
+        "Pontuação": "7",
+        "Votos": "13"
+      },
+      {
+        "id": "41",
+        "Item": "Unbreakable Kimmy Schmidt",
+        "Classificação": "12",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia",
+        "Pontuação": "8",
+        "Votos": "78"
+      },
+      {
+        "id": "42",
+        "Item": "Everything Sucks!",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "7",
+        "Votos": "23"
+      },
+      {
+        "id": "43",
+        "Item": "Cable Girls",
+        "Classificação": "15",
+        "Duração": "50 min",
+        "Tipo": "série",
+        "Genero": "Drama",
+        "Pontuação": "8",
+        "Votos": "16"
+      },
+      {
+        "id": "44",
+        "Item": "The Last Kingdom",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Ação, Drama, História",
+        "Pontuação": "9",
+        "Votos": "164"
+      },
+      {
+        "id": "45",
+        "Item": "The Society",
+        "Classificação": "15",
+        "Duração": "58 min",
+        "Tipo": "série",
+        "Genero": "Drama, Mistério, Ficção Científica",
+        "Pontuação": "7",
+        "Votos": "36"
+      },
+      {
+        "id": "46",
+        "Item": "Maniac",
+        "Classificação": "18",
+        "Duração": "386 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Ficção Científica",
+        "Pontuação": "8",
+        "Votos": "86"
+      },
+      {
+        "id": "47",
+        "Item": "Gilmore Girls: A Year in the Life",
+        "Classificação": "12",
+        "Duração": "370 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "8",
+        "Votos": "44"
+      },
+      {
+        "id": "48",
+        "Item": "Russian Doll",
+        "Classificação": "18",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Mistério",
+        "Pontuação": "8",
+        "Votos": "106"
+      },
+      {
+        "id": "49",
+        "Item": "Castlevania",
+        "Classificação": "15",
+        "Duração": "23 min",
+        "Tipo": "série",
+        "Genero": "Animação, Ação, Aventura",
+        "Pontuação": "8",
+        "Votos": "79"
+      },
+      {
+        "id": "50",
+        "Item": "On My Block",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "8",
+        "Votos": "19"
+      },
+      {
+        "id": "51",
+        "Item": "Marco Polo",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Ação, Aventura, Drama",
+        "Pontuação": "8",
+        "Votos": "78"
+      },
+      {
+        "id": "52",
+        "Item": "Grace and Frankie",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia",
+        "Pontuação": "8",
+        "Votos": "56"
+      },
+      {
+        "id": "53",
+        "Item": "Love, Death & Robots",
+        "Classificação": "18",
+        "Duração": "15 min",
+        "Tipo": "série",
+        "Genero": "Animação, Curta, Ação",
+        "Pontuação": "8",
+        "Votos": "195"
+      },
+      {
+        "id": "54",
+        "Item": "Dear White People",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "6",
+        "Votos": "26"
+      },
+      {
+        "id": "55",
+        "Item": "Safe",
+        "Classificação": "15",
+        "Duração": "356 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Mistério",
+        "Pontuação": "7",
+        "Votos": "51"
+      },
+      {
+        "id": "56",
+        "Item": "Greenhouse Academy",
+        "Classificação": "0",
+        "Duração": "25 min",
+        "Tipo": "série",
+        "Genero": "Aventura, Comédia, Drama",
+        "Pontuação": "7",
+        "Votos": "6"
+      },
+      {
+        "id": "57",
+        "Item": "RuPaul's Drag Race",
+        "Classificação": "15",
+        "Duração": "63 min",
+        "Tipo": "série",
+        "Genero": "Game-Show, Reality-TV",
+        "Pontuação": "9",
+        "Votos": "23"
+      },
+      {
+        "id": "58",
+        "Item": "The Order",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Drama, Fantasia, Terror",
+        "Pontuação": "7",
+        "Votos": "33"
+      },
+      {
+        "id": "59",
+        "Item": "Fuller House",
+        "Classificação": "0",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Família",
+        "Pontuação": "7",
+        "Votos": "29"
+      },
+      {
+        "id": "60",
+        "Item": "Travelers",
+        "Classificação": "15",
+        "Duração": "45 min",
+        "Tipo": "série",
+        "Genero": "Drama, Mistério, Ficção Científica",
+        "Pontuação": "8",
+        "Votos": "63"
+      },
+      {
+        "id": "61",
+        "Item": "Master of None",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "8",
+        "Votos": "76"
+      },
+      {
+        "id": "62",
+        "Item": "Love",
+        "Classificação": "15",
+        "Duração": "50 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Romance",
+        "Pontuação": "8",
+        "Votos": "45"
+      },
+      {
+        "id": "63",
+        "Item": "Narcos: Mexico",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama",
+        "Pontuação": "8",
+        "Votos": "92"
+      },
+      {
+        "id": "64",
+        "Item": "The Hookup Plan",
+        "Classificação": "15",
+        "Duração": "27 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Romance",
+        "Pontuação": "7",
+        "Votos": "5"
+      },
+      {
+        "id": "65",
+        "Item": "One Day at a Time",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "8",
+        "Votos": "18"
+      },
+      {
+        "id": "66",
+        "Item": "Between",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Drama, Mistério, Ficção Científica",
+        "Pontuação": "6",
+        "Votos": "9"
+      },
+      {
+        "id": "67",
+        "Item": "GLOW",
+        "Classificação": "18",
+        "Duração": "35 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Esporte",
+        "Pontuação": "8",
+        "Votos": "50"
+      },
+      {
+        "id": "68",
+        "Item": "Making a Murderer",
+        "Classificação": "15",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Documentário, Crime",
+        "Pontuação": "9",
+        "Votos": "102"
+      },
+      {
+        "id": "69",
+        "Item": "Gypsy",
+        "Classificação": "15",
+        "Duração": "51 min",
+        "Tipo": "série",
+        "Genero": "Drama, Suspense",
+        "Pontuação": "7",
+        "Votos": "18"
+      },
+      {
+        "id": "70",
+        "Item": "The Get Down",
+        "Classificação": "15",
+        "Duração": "52 min",
+        "Tipo": "série",
+        "Genero": "Drama, Música, Musical",
+        "Pontuação": "8",
+        "Votos": "23"
+      },
+      {
+        "id": "71",
+        "Item": "The Protector",
+        "Classificação": "15",
+        "Duração": "45 min",
+        "Tipo": "série",
+        "Genero": "Ação, Aventura, Drama",
+        "Pontuação": "6",
+        "Votos": "36"
+      },
+      {
+        "id": "72",
+        "Item": "Friends from College",
+        "Classificação": "18",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama",
+        "Pontuação": "7",
+        "Votos": "23"
+      },
+      {
+        "id": "73",
+        "Item": "Arrested Development",
+        "Classificação": "15",
+        "Duração": "22 min",
+        "Tipo": "série",
+        "Genero": "Comédia",
+        "Pontuação": "9",
+        "Votos": "323"
+      },
+      {
+        "id": "74",
+        "Item": "Hemlock Grove",
+        "Classificação": "15",
+        "Duração": "46 min",
+        "Tipo": "série",
+        "Genero": "Drama, Fantasia, Terror",
+        "Pontuação": "7",
+        "Votos": "42"
+      },
+      {
+        "id": "75",
+        "Item": "Slasher",
+        "Classificação": "18",
+        "Duração": "60 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Terror",
+        "Pontuação": "7",
+        "Votos": "16"
+      },
+      {
+        "id": "76",
+        "Item": "F Is for Family",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Animação, Comédia, Drama",
+        "Pontuação": "8",
+        "Votos": "41"
+      },
+      {
+        "id": "77",
+        "Item": "The Ranch",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Drama, Faroeste",
+        "Pontuação": "8",
+        "Votos": "42"
+      },
+      {
+        "id": "78",
+        "Item": "American Vandal",
+        "Classificação": "15",
+        "Duração": "34 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Crime, Drama",
+        "Pontuação": "8",
+        "Votos": "32"
+      },
+      {
+        "id": "79",
+        "Item": "Dead to Me",
+        "Classificação": "15",
+        "Duração": "30 min",
+        "Tipo": "série",
+        "Genero": "Comédia, Crime, Drama",
+        "Pontuação": "8",
+        "Votos": "99"
+      },
+      {
+        "id": "80",
+        "Item": "Quicksand",
+        "Classificação": "18",
+        "Duração": "45 min",
+        "Tipo": "série",
+        "Genero": "Crime, Drama, Mistério",
+        "Pontuação": "7",
+        "Votos": "25"
+      },
+      {
+        "id": "81",
+        "Item": "Eclipse of Time",
+        "Classificação": "16",
+        "Duração": "120 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Romance",
+        "Pontuação": "7",
+        "Votos": "412"
+      },
+      {
+        "id": "82",
+        "Item": "The Silent Forest",
+        "Classificação": "12",
+        "Duração": "105 min",
+        "Tipo": "filme",
+        "Genero": "Mistério, Suspense",
+        "Pontuação": "8",
+        "Votos": "350"
+      },
+      {
+        "id": "83",
+        "Item": "Quantum Leap",
+        "Classificação": "14",
+        "Duração": "130 min",
+        "Tipo": "filme",
+        "Genero": "Ficção Científica, Aventura",
+        "Pontuação": "9",
+        "Votos": "287"
+      },
+      {
+        "id": "84",
+        "Item": "Sands of Time",
+        "Classificação": "16",
+        "Duração": "95 min",
+        "Tipo": "filme",
+        "Genero": "Aventura, História",
+        "Pontuação": "7",
+        "Votos": "205"
+      },
+      {
+        "id": "85",
+        "Item": "The Last Painter",
+        "Classificação": "18",
+        "Duração": "110 min",
+        "Tipo": "filme",
+        "Genero": "Biografia, Drama",
+        "Pontuação": "8",
+        "Votos": "196"
+      },
+      {
+        "id": "86",
+        "Item": "Winters of War",
+        "Classificação": "18",
+        "Duração": "140 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Guerra",
+        "Pontuação": "9",
+        "Votos": "421"
+      },
+      {
+        "id": "87",
+        "Item": "Beyond the Eclipse",
+        "Classificação": "12",
+        "Duração": "100 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Sci-Fi",
+        "Pontuação": "6",
+        "Votos": "134"
+      },
+      {
+        "id": "88",
+        "Item": "Whispers in the Dark",
+        "Classificação": "14",
+        "Duração": "90 min",
+        "Tipo": "filme",
+        "Genero": "Suspense, Terror",
+        "Pontuação": "7",
+        "Votos": "278"
+      },
+      {
+        "id": "89",
+        "Item": "Chasing Shadows",
+        "Classificação": "12",
+        "Duração": "115 min",
+        "Genero": "Ação, Mistério",
+        "Pontuação": "8",
+        "Votos": "312"
+      },
+      {
+        "id": "90",
+        "Item": "Hourglass",
+        "Classificação": "15",
+        "Duração": "102 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Suspense",
+        "Pontuação": "9",
+        "Votos": "401"
+      },
+      {
+        "id": "91",
+        "Item": "Eternal Flames",
+        "Classificação": "16",
+        "Duração": "125 min",
+        "Tipo": "filme",
+        "Genero": "Ação, Drama",
+        "Pontuação": "7",
+        "Votos": "350"
+      },
+      {
+        "id": "92",
+        "Item": "Night of the Comet",
+        "Classificação": "15",
+        "Duração": "110 min",
+        "Tipo": "filme",
+        "Genero": "Ficção Científica, Terror",
+        "Pontuação": "8",
+        "Votos": "269"
+      },
+      {
+        "id": "93",
+        "Item": "The Forsaken",
+        "Classificação": "14",
+        "Duração": "95 min",
+        "Tipo": "filme",
+        "Genero": "Aventura, Fantasia",
+        "Pontuação": "7",
+        "Votos": "228"
+      },
+      {
+        "id": "94",
+        "Item": "Lost in the Depths",
+        "Classificação": "16",
+        "Duração": "130 min",
+        "Tipo": "filme",
+        "Genero": "Aventura, Suspense",
+        "Pontuação": "9",
+        "Votos": "308"
+      },
+      {
+        "id": "95",
+        "Item": "The Edge of Tomorrow",
+        "Classificação": "12",
+        "Duração": "90 min",
+        "Tipo": "filme",
+        "Genero": "Ação, Drama",
+        "Pontuação": "8",
+        "Votos": "244"
+      },
+      {
+        "id": "96",
+        "Item": "Rift in Time",
+        "Classificação": "18",
+        "Duração": "135 min",
+        "Tipo": "filme",
+        "Genero": "Ficção Científica, Drama",
+        "Pontuação": "8",
+        "Votos": "412"
+      },
+      {
+        "id": "97",
+        "Item": "Mystic River",
+        "Classificação": "15",
+        "Duração": "120 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Mistério",
+        "Pontuação": "9",
+        "Votos": "389"
+      },
+      {
+        "id": "98",
+        "Item": "Voices",
+        "Classificação": "15",
+        "Duração": "105 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Horror",
+        "Pontuação": "7",
+        "Votos": "198"
+      },
+      {
+        "id": "99",
+        "Item": "Glimpse of the Past",
+        "Classificação": "16",
+        "Duração": "110 min",
+        "Tipo": "filme",
+        "Genero": "História, Drama",
+        "Pontuação": "8",
+        "Votos": "273"
+      },
+      {
+        "id": "100",
+        "Item": "Silent Hill",
+        "Classificação": "18",
+        "Duração": "130 min",
+        "Tipo": "filme",
+        "Genero": "Terror, Mistério",
+        "Pontuação": "9",
+        "Votos": "457"
+      },
+      {
+        "id": "101",
+        "Item": "Dark Reflections",
+        "Classificação": "12",
+        "Duração": "95 min",
+        "Tipo": "filme",
+        "Genero": "Fantasia, Drama",
+        "Pontuação": "7",
+        "Votos": "146"
+      },
+      {
+        "id": "102",
+        "Item": "Sunrise",
+        "Classificação": "12",
+        "Duração": "110 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Romance",
+        "Pontuação": "8",
+        "Votos": "321"
+      },
+      {
+        "id": "103",
+        "Item": "The Void",
+        "Classificação": "18",
+        "Duração": "85 min",
+        "Tipo": "filme",
+        "Genero": "Terror, Sci-Fi",
+        "Pontuação": "7",
+        "Votos": "234"
+      },
+      {
+        "id": "104",
+        "Item": "Horizons",
+        "Classificação": "16",
+        "Duração": "118 min",
+        "Tipo": "filme",
+        "Genero": "Ficção Científica, Aventura",
+        "Pontuação": "9",
+        "Votos": "395"
+      },
+      {
+        "id": "105",
+        "Item": "Starbound",
+        "Classificação": "15",
+        "Duração": "105 min",
+        "Tipo": "filme",
+        "Genero": "Aventura, Sci-Fi",
+        "Pontuação": "8",
+        "Votos": "299"
+      },
+      {
+        "id": "106",
+        "Item": "The Last Light",
+        "Classificação": "14",
+        "Duração": "100 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Mistério",
+        "Pontuação": "7",
+        "Votos": "221"
+      },
+      {
+        "id": "107",
+        "Item": "Moonrise",
+        "Classificação": "12",
+        "Duração": "90 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Romance",
+        "Pontuação": "9",
+        "Votos": "336"
+      },
+      {
+        "id": "108",
+        "Item": "Descent",
+        "Classificação": "18",
+        "Duração": "110 min",
+        "Tipo": "filme",
+        "Genero": "Ação, Thriller",
+        "Pontuação": "8",
+        "Votos": "259"
+      },
+      {
+        "id": "109",
+        "Item": "The Forgotten",
+        "Classificação": "16",
+        "Duração": "112 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Suspense",
+        "Pontuação": "7",
+        "Votos": "189"
+      },
+      {
+        "id": "110",
+        "Item": "Shadow Walker",
+        "Classificação": "15",
+        "Duração": "123 min",
+        "Genero": "Ação, Fantasia",
+        "Pontuação": "9",
+        "Votos": "413"
+      },
+      {
+        "id": "111",
+        "Item": "Paradox",
+        "Classificação": "16",
+        "Duração": "95 min",
+        "Tipo": "filme",
+        "Genero": "Sci-Fi, Thriller",
+        "Pontuação": "8",
+        "Votos": "342"
+      },
+      {
+        "id": "112",
+        "Item": "The Abyss",
+        "Classificação": "15",
+        "Duração": "97 min",
+        "Tipo": "filme",
+        "Genero": "Aventura, Sci-Fi",
+        "Pontuação": "7",
+        "Votos": "280"
+      },
+      {
+        "id": "113",
+        "Item": "Skyfall",
+        "Classificação": "18",
+        "Duração": "128 min",
+        "Tipo": "filme",
+        "Genero": "Ação, Espionagem",
+        "Pontuação": "9",
+        "Votos": "490"
+      },
+      {
+        "id": "114",
+        "Item": "Ghostly Shadows",
+        "Classificação": "12",
+        "Duração": "102 min",
+        "Tipo": "filme",
+        "Genero": "Terror, Mistério",
+        "Pontuação": "8",
+        "Votos": "368"
+      },
+      {
+        "id": "115",
+        "Item": "Cryptic",
+        "Classificação": "16",
+        "Duração": "118 min",
+        "Tipo": "filme",
+        "Genero": "Horror, Sci-Fi",
+        "Pontuação": "9",
+        "Votos": "442"
+      },
+      {
+        "id": "116",
+        "Item": "The Wanderer",
+        "Classificação": "14",
+        "Duração": "115 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Aventura",
+        "Pontuação": "8",
+        "Votos": "305"
+      },
+      {
+        "id": "117",
+        "Item": "Reign of Fire",
+        "Classificação": "18",
+        "Duração": "104 min",
+        "Tipo": "filme",
+        "Genero": "Ação, Fantasia",
+        "Pontuação": "7",
+        "Votos": "239"
+      },
+      {
+        "id": "118",
+        "Item": "The Silence",
+        "Classificação": "16",
+        "Duração": "90 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Suspense",
+        "Pontuação": "8",
+        "Votos": "322"
+      },
+      {
+        "id": "119",
+        "Item": "Oblivion",
+        "Classificação": "15",
+        "Duração": "125 min",
+        "Tipo": "filme",
+        "Genero": "Ação, Sci-Fi",
+        "Pontuação": "9",
+        "Votos": "476"
+      },
+      {
+        "id": "120",
+        "Item": "Timeless",
+        "Classificação": "14",
+        "Duração": "130 min",
+        "Tipo": "filme",
+        "Genero": "Drama, Romance",
+        "Pontuação": "8",
+        "Votos": "364"
+      }
+    ]
+  }
+]
