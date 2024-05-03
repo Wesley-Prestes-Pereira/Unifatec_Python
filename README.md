@@ -13,5 +13,8 @@ Todas as atividades e projetos de Python desenvolvidos durante as aulas estão a
 6. ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white) - [Aula 6](https://colab.research.google.com/drive/10hfNnxWiOnEJcIMReObLRpydwIZTgAkb?usp=drive_link)
 
 #
+
 ### Projetos
-1. [![Projeto 1](https://img.shields.io/badge/Projeto%201-8A2BE2)](https://unifatecpython.streamlit.app) - [Dashboard - IMDB](https://unifatecpython.streamlit.app)   
+1. [![Projeto 1](https://img.shields.io/badge/Projeto%201-8A2BE2)](https://unifatecpython.streamlit.app) - [Dashboard - IMDB](https://unifatecpython.streamlit.app)
+   
+#
