@@ -1,6 +1,6 @@
 # Atividades de Python
 
-Este repositório contém todas as atividades e projetos de Python feitos em sala de aula, os mesmos estão disponiveis por aula, e .
+Este repositório abriga todas as atividades e projetos de Python desenvolvidos durante as aulas. Os materiais estão organizados por sessão de aula e por projeto específico, facilitando o acesso e a consulta.
 
 ### Atividades
 1. ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white) - [Aula 1](https://colab.research.google.com/drive/1_ifAi-R-dGBetRXNDIygtT9qis9Qk1em?usp=drive_link) 
