@@ -7,6 +7,8 @@ import streamlit as st
 url = "https://raw.githubusercontent.com/Wesley-Prestes-Pereira/Unifatec_Python/main/P1/datasheet.json"
 df = pd.read_json(url)
 
+print(df.head())
+
 # Função para converter duração para minutos
 def convert_duration_to_minutes(duration):
     if 'min' in duration:
