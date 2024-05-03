@@ -11,6 +11,5 @@ Este repositório contém todas as atividades e projetos de Python feitos em sal
 6. ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white) - [Aula 6](https://colab.research.google.com/drive/10hfNnxWiOnEJcIMReObLRpydwIZTgAkb?usp=drive_link)
 
 ### Projetos
-1. [Dashboard](https://unifatecpython.streamlit.app)
-
+1. [![Dashboard - Active](https://img.shields.io/badge/Dashboard-Active-green)](https://unifatecpython.streamlit.app)
    
