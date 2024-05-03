@@ -1,14 +1,22 @@
+# Importação das Bibliotecas necessárias para o projeto.
 import json
 import pandas as pd
 import urllib.request
 import plotly.express as px
 import streamlit as st
 
-# Carrega os dados do JSON
+# Função para carregar os dados do JSON
+@st.cache
+def load_data(url):
+    response = urllib.request.urlopen(url)
+    data_json = json.load(response)
+    return pd.DataFrame(data_json)
+
+# URL do JSON
 url = "https://raw.githubusercontent.com/Wesley-Prestes-Pereira/Unifatec_Python/main/P1/datasheet.json"
-response = urllib.request.urlopen(url)
-data_json = json.load(response)
-df = pd.DataFrame(data_json)
+
+# Carrega os dados do JSON
+df = load_data(url)
 
 # Função para converter a duração em minutos
 def convert_duration_to_minutes(duration):
