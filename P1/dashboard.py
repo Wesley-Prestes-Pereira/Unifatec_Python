@@ -19,10 +19,6 @@ def convert_duration_to_minutes(duration):
 df['Duração_min'] = df['Duração'].apply(convert_duration_to_minutes)
 df['Tipo'] = df['Duração_min'].apply(lambda x: 'Filme' if x <= 120 else 'Série')
 
-# Separando filmes e séries
-df_filmes = df[df['Tipo'] == 'Filme']
-df_series = df[df['Tipo'] == 'Série']
-
 # Funções para criação de gráficos
 def distribuicao_por_genero(df, title):
     fig = px.bar(df, x='Genero', title=f'{title} - Distribuição por Gênero')
@@ -44,27 +40,40 @@ def duracao_classificacao(df, title):
 st.set_page_config(layout='wide')
 st.title("Análise de Filmes e Séries 🎥")
 
-filtro_classificacao = st.sidebar.multiselect('Filtrar por Classificação', df['Classificação'].unique())
+# Filtros
+filtro_genero = st.sidebar.multiselect('Filtrar por Gênero', options=df['Genero'].unique())
+filtro_classificacao = st.sidebar.multiselect('Filtrar por Classificação', options=df['Classificação'].unique())
+filtro_tipo = st.sidebar.radio('Selecionar Tipo', ['Todos', 'Filme', 'Série'])
 
+# Aplicação dos filtros
+df_filtrado = df.copy()
+if filtro_genero:
+    df_filtrado = df_filtrado[df_filtrado['Genero'].isin(filtro_genero)]
 if filtro_classificacao:
-    df = df[df['Classificação'].isin(filtro_classificacao)]
+    df_filtrado = df_filtrado[df_filtrado['Classificação'].isin(filtro_classificacao)]
+if filtro_tipo != 'Todos':
+    df_filtrado = df_filtrado[df_filtrado['Tipo'] == filtro_tipo]
 
-aba1, aba2, aba3 = st.tabs(['Dataset', 'Filmes', 'Séries'])
+# Abas para visualização dos dados
+aba1, aba2, aba3, aba4 = st.tabs(['Dataset', 'Filmes', 'Séries', 'Análise Detalhada'])
 with aba1:
-    st.dataframe(df)
+    st.dataframe(df_filtrado)
 with aba2:
     coluna1, coluna2 = st.columns(2)
     with coluna1:
-        st.plotly_chart(distribuicao_por_genero(df_filmes, 'Filmes'), use_container_width=True)
-        st.plotly_chart(pontuacao_por_classificacao(df_filmes, 'Filmes'), use_container_width=True)
+        st.plotly_chart(distribuicao_por_genero(df_filtrado[df_filtrado['Tipo'] == 'Filme'], 'Filmes'), use_container_width=True)
+        st.plotly_chart(pontuacao_por_classificacao(df_filtrado[df_filtrado['Tipo'] == 'Filme'], 'Filmes'), use_container_width=True)
     with coluna2:
-        st.plotly_chart(votos_por_genero(df_filmes, 'Filmes'), use_container_width=True)
-        st.plotly_chart(duracao_classificacao(df_filmes, 'Filmes'), use_container_width=True)
+        st.plotly_chart(votos_por_genero(df_filtrado[df_filtrado['Tipo'] == 'Filme'], 'Filmes'), use_container_width=True)
+        st.plotly_chart(duracao_classificacao(df_filtrado[df_filtrado['Tipo'] == 'Filme'], 'Filmes'), use_container_width=True)
 with aba3:
     coluna1, coluna2 = st.columns(2)
     with coluna1:
-        st.plotly_chart(distribuicao_por_genero(df_series, 'Séries'), use_container_width=True)
-        st.plotly_chart(pontuacao_por_classificacao(df_series, 'Séries'), use_container_width=True)
+        st.plotly_chart(distribuicao_por_genero(df_filtrado[df_filtrado['Tipo'] == 'Série'], 'Séries'), use_container_width=True)
+        st.plotly_chart(pontuacao_por_classificacao(df_filtrado[df_filtrado['Tipo'] == 'Série'], 'Séries'), use_container_width=True)
     with coluna2:
-        st.plotly_chart(votos_por_genero(df_series, 'Séries'), use_container_width=True)
-        st.plotly_chart(duracao_classificacao(df_series, 'Séries'), use_container_width=True)
+        st.plotly_chart(votos_por_genero(df_filtrado[df_filtrado['Tipo'] == 'Série'], 'Séries'), use_container_width=True)
+        st.plotly_chart(duracao_classificacao(df_filtrado[df_filtrado['Tipo'] == 'Série'], 'Séries'), use_container_width=True)
+with aba4:
+        st.plotly_chart(px.scatter(df_filtrado, x='Pontuação', y='Votos', color='Genero', title='Relação Votos-Pontuação'), use_container_width=True)
+
