@@ -12,69 +12,45 @@ data_json = json.loads(response.read())
 data = next(item for item in data_json if item['type'] == 'table')['data']
 df = pd.DataFrame(data)
 
-def converter_duração(duration):
+# Função para converter duração e classificar filmes/séries
+def converter_duracao(duration):
     if 'min' in duration:
         return sum(int(x) * 60 ** i for i, x in enumerate(reversed(duration.replace(' min', '').split(','))))
-    else:
-        return int(duration)
+    return int(duration)
 
-df['Duração_min'] = df['Duração'].apply(converter_duração)
+df['Duração_min'] = df['Duração'].apply(converter_duracao)
 df['Tipo'] = df['Duração_min'].apply(lambda x: 'Filme' if x <= 120 else 'Série')
 
+# Certifique-se de que as colunas usadas existem e têm dados
+if 'Genero' not in df or 'Pontuação' not in df or 'Votos' not in df:
+    st.error("Erro: Uma ou mais colunas necessárias não estão presentes no DataFrame.")
+    st.stop()
 
-# Funções para criar gráficos
-def criar_grafico_barra(df, x, y, title, labels):
-    fig = px.bar(df, x=x, y=y, title=title, labels=labels)
-    return fig
-
-def criar_grafico_linha(df, x, y, title, labels):
-    fig = px.line(df, x=x, y=y, title=title, labels=labels)
-    return fig
-
-def criar_grafico_dispersao(df, x, y, color, title, labels):
-    fig = px.scatter(df, x=x, y=y, color=color, title=title, labels=labels)
-    return fig
-
-# Configuração da página
-st.set_page_config(layout='wide')
-st.title("Análise de Filmes e Séries 🎥")
-
-# Filtros laterais
-filtro_classificacao = st.sidebar.multiselect('Filtrar por Classificação', df['Classificação'].unique())
-filtro_genero = st.sidebar.multiselect('Filtrar por Gênero', df['Genero'].unique())
-filtro_tipo = st.sidebar.radio('Selecionar Tipo', ['Todos', 'Filme', 'Série'])
+# Filtros e configuração do Streamlit
+filtro_classificacao = st.sidebar.multiselect('Filtrar por Classificação', options=df['Classificação'].unique())
+filtro_genero = st.sidebar.multiselect('Filtrar por Gênero', options=df['Genero'].unique())
+filtro_tipo = st.sidebar.radio('Selecionar Tipo', options=['Todos', 'Filme', 'Série'])
 
 # Aplicação dos filtros
+df_filtrado = df.copy()
 if filtro_classificacao:
-    df = df[df['Classificação'].isin(filtro_classificacao)]
+    df_filtrado = df_filtrado[df_filtrado['Classificação'].isin(filtro_classificacao)]
 if filtro_genero:
-    df = df[df['Genero'].isin(filtro_genero)]
+    df_filtrado = df_filtrado[df_filtrado['Genero'].isin(filtro_genero)]
 if filtro_tipo != 'Todos':
-    df = df[df['Tipo'] == filtro_tipo]
+    df_filtrado = df_filtrado[df_filtrado['Tipo'] == filtro_tipo]
 
 # Abas para visualização dos dados
 aba1, aba2, aba3, aba4 = st.tabs(['Dataset', 'Filmes', 'Séries', 'Análise Detalhada'])
 with aba1:
-    st.dataframe(df)
+    st.dataframe(df_filtrado)
 with aba2:
     coluna1, coluna2 = st.columns(2)
     with coluna1:
-        st.plotly_chart(criar_grafico_barra(df[df['Tipo'] == 'Filme'], 'Genero', 'Pontuação', 'Distribuição de Pontuação por Gênero - Filmes', {'Genero': 'Gênero', 'Pontuação': 'Pontuação Média'}), use_container_width=True)
-        st.plotly_chart(criar_grafico_barra(df[df['Tipo'] == 'Filme'], 'Genero', 'Votos', 'Votos por Gênero - Filmes', {'Genero': 'Gênero', 'Votos': 'Total de Votos'}), use_container_width=True)
+        st.plotly_chart(px.bar(df_filtrado[df_filtrado['Tipo'] == 'Filme'], x='Genero', y='Pontuação', title='Distribuição de Pontuação por Gênero - Filmes'), use_container_width=True)
     with coluna2:
-        st.plotly_chart(criar_grafico_linha(df[df['Tipo'] == 'Filme'], 'Classificação', 'Duração_min', 'Duração por Classificação - Filmes', {'Classificação': 'Classificação', 'Duração_min': 'Duração Média (min)'}), use_container_width=True)
-        st.plotly_chart(criar_grafico_linha(df[df['Tipo'] == 'Filme'], 'Genero', 'Pontuação', 'Evolução da Pontuação por Gênero - Filmes', {'Genero': 'Gênero', 'Pontuação': 'Pontuação Média'}), use_container_width=True)
+        st.plotly_chart(px.bar(df_filtrado[df_filtrado['Tipo'] == 'Filme'], x='Genero', y='Votos', title='Votos por Gênero - Filmes'), use_container_width=True)
 with aba3:
-    coluna1, coluna2 = st.columns(2)
-    with coluna1:
-        st.plotly_chart(criar_grafico_barra(df[df['Tipo'] == 'Série'], 'Genero', 'Pontuação', 'Distribuição de Pontuação por Gênero - Séries', {'Genero': 'Gênero', 'Pontuação': 'Pontuação Média'}), use_container_width=True)
-        st.plotly_chart(criar_grafico_barra(df[df['Tipo'] == 'Série'], 'Genero', 'Votos', 'Votos por Gênero - Séries', {'Genero': 'Gênero', 'Votos': 'Total de Votos'}), use_container_width=True)
-    with coluna2:
-        st.plotly_chart(criar_grafico_linha(df[df['Tipo'] == 'Série'], 'Classificação', 'Duração_min', 'Duração por Classificação - Séries', {'Classificação': 'Classificação', 'Duração_min': 'Duração Média (min)'}), use_container_width=True)
-        st.plotly_chart(criar_grafico_linha(df[df['Tipo'] == 'Série'], 'Genero', 'Pontuação', 'Evolução da Pontuação por Gênero - Séries', {'Genero': 'Gênero', 'Pontuação': 'Pontuação Média'}), use_container_width=True)
+    st.dataframe(df_filtrado[df_filtrado['Tipo'] == 'Série'])  # Apenas para verificação
 with aba4:
-    coluna1, coluna2 = st.columns(2)
-    with coluna1:
-        st.plotly_chart(criar_grafico_dispersao(df, 'Votos', 'Pontuação', 'Genero', 'Relação Votos-Pontuação por Gênero', {'Votos': 'Votos', 'Pontuação': 'Pontuação', 'Genero': 'Gênero'}), use_container_width=True)
-    with coluna2:
-        st.plotly_chart(criar_grafico_linha(df, 'Genero', 'Pontuação', 'Evolução da Pontuação por Gênero', {'Genero': 'Gênero', 'Pontuação': 'Pontuação Média'}), use_container_width=True)
+    st.plotly_chart(px.scatter(df_filtrado, x='Pontuação', y='Votos', color='Genero', title='Relação Votos-Pontuação'), use_container_width=True)
