@@ -4,7 +4,6 @@ import plotly.express as px
 import streamlit as st
 from urllib.request import urlopen
 
-# URL do seu JSON no GitHub
 url = "https://raw.githubusercontent.com/Wesley-Prestes-Pereira/Unifatec_Python/main/P1/datasheet.json"
 response = urlopen(url)
 data_json = json.loads(response.read())
@@ -19,7 +18,6 @@ def convert_duration_to_minutes(duration):
 df['Duração_min'] = df['Duração'].apply(convert_duration_to_minutes)
 df['Tipo'] = df['Duração_min'].apply(lambda x: 'Filme' if x <= 120 else 'Série')
 
-# Funções para criação de gráficos
 def distribuicao_por_genero(df, title):
     fig = px.bar(df, x='Genero', title=f'{title} - Distribuição por Gênero')
     return fig
@@ -36,16 +34,13 @@ def duracao_classificacao(df, title):
     fig = px.bar(df, x='Classificação', y='Duração_min', title=f'{title} - Média de Duração por Classificação')
     return fig
 
-# Configurações do Streamlit
 st.set_page_config(layout='wide')
-st.title("Análise de Filmes e Séries 🎥")
+st.title("IMDB de Filmes e Séries 🎥")
 
-# Filtros
 filtro_genero = st.sidebar.multiselect('Filtrar por Gênero', options=df['Genero'].unique())
 filtro_classificacao = st.sidebar.multiselect('Filtrar por Classificação', options=df['Classificação'].unique())
 filtro_tipo = st.sidebar.radio('Selecionar Tipo', ['Todos', 'Filme', 'Série'])
 
-# Aplicação dos filtros
 df_filtrado = df.copy()
 if filtro_genero:
     df_filtrado = df_filtrado[df_filtrado['Genero'].isin(filtro_genero)]
@@ -54,7 +49,6 @@ if filtro_classificacao:
 if filtro_tipo != 'Todos':
     df_filtrado = df_filtrado[df_filtrado['Tipo'] == filtro_tipo]
 
-# Abas para visualização dos dados
 aba1, aba2, aba3, aba4 = st.tabs(['Dataset', 'Filmes', 'Séries', 'Análise Detalhada'])
 with aba1:
     st.dataframe(df_filtrado)
