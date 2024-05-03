@@ -12,9 +12,15 @@ data_json = json.loads(response.read())
 data = next(item for item in data_json if item['type'] == 'table')['data']
 df = pd.DataFrame(data)
 
-# Converter duração e classificar filmes/séries
-df['Duração_min'] = df['Duração'].apply(lambda duration: sum(int(x) * 60 ** i for i, x in enumerate(reversed(duration.replace(' min', '').split(','))) if 'min' in duration else int(duration)))
+def converter_duração(duration):
+    if 'min' in duration:
+        return sum(int(x) * 60 ** i for i, x in enumerate(reversed(duration.replace(' min', '').split(','))))
+    else:
+        return int(duration)
+
+df['Duração_min'] = df['Duração'].apply(converter_duração)
 df['Tipo'] = df['Duração_min'].apply(lambda x: 'Filme' if x <= 120 else 'Série')
+
 
 # Funções para criar gráficos
 def criar_grafico_barra(df, x, y, title, labels):
