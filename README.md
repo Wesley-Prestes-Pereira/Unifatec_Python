@@ -5,9 +5,9 @@ Todas as atividades e projetos de Python desenvolvidos durante as aulas estão a
 #
 
 ## 2º Período
-### Lista 1
+### [Lista 1](https://drive.google.com/file/d/1epoweIY1YYjVw8qfaSaKacWum6rjne6f/view?usp=drive_link) - [![PDF](https://img.shields.io/badge/PDF-FF0000?logo=adobeacrobatreader&logoColor=white)](https://drive.google.com/file/d/1epoweIY1YYjVw8qfaSaKacWum6rjne6f/view?usp=drive_link)
 
-[Trabalho](https://drive.google.com/file/d/1epoweIY1YYjVw8qfaSaKacWum6rjne6f/view?usp=drive_link) - [![PDF](https://img.shields.io/badge/PDF-FF0000?logo=adobeacrobatreader&logoColor=white)](https://drive.google.com/file/d/1epoweIY1YYjVw8qfaSaKacWum6rjne6f/view?usp=drive_link)
+
 1. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1aLh10ijOH7i6NRtBwAqV5dJ52u3RERQP?usp=drive_link) - [Exercício 1](https://colab.research.google.com/drive/1aLh10ijOH7i6NRtBwAqV5dJ52u3RERQP?usp=drive_link)
 2. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1FOYUzmo9oM3L-FvrOlJ3Wh536w_1GkyY?usp=drive_link) - [Exercício 2](https://colab.research.google.com/drive/1FOYUzmo9oM3L-FvrOlJ3Wh536w_1GkyY?usp=drive_link)
 3. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1Nq__CpmYS2Ua9LN3DThguqLcI5nHve4Z?usp=drive_link) - [Exercício 3](https://colab.research.google.com/drive/1Nq__CpmYS2Ua9LN3DThguqLcI5nHve4Z?usp=drive_link)
