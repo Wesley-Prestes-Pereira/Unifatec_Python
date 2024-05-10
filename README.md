@@ -2,9 +2,10 @@
 
 Todas as atividades e projetos de Python desenvolvidos durante as aulas estão armazenados neste repositório. Agora, eles estão organizados por período do curso, facilitando o acesso e a consulta.
 
-#
+---
 
 ## 2º Período
+
 ### [Lista 1](https://drive.google.com/file/d/1epoweIY1YYjVw8qfaSaKacWum6rjne6f/view?usp=drive_link) - [![PDF](https://img.shields.io/badge/PDF-FF0000?logo=adobeacrobatreader&logoColor=white)](https://drive.google.com/file/d/1epoweIY1YYjVw8qfaSaKacWum6rjne6f/view?usp=drive_link)
 
 1. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1aLh10ijOH7i6NRtBwAqV5dJ52u3RERQP?usp=drive_link) - [Exercício 1](https://colab.research.google.com/drive/1aLh10ijOH7i6NRtBwAqV5dJ52u3RERQP?usp=drive_link)
@@ -13,7 +14,6 @@ Todas as atividades e projetos de Python desenvolvidos durante as aulas estão a
 4. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1XuGAqYLUNxDqjd9Gm3wnzis1W8K-UJ3n?usp=drive_link) - [Exercício 4](https://colab.research.google.com/drive/1XuGAqYLUNxDqjd9Gm3wnzis1W8K-UJ3n?usp=drive_link)
 5. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1MlnbijNk5UWTdrA68wbkB3ZItmBKfzSI?usp=drive_link) - [Exercício 5](https://colab.research.google.com/drive/1MlnbijNk5UWTdrA68wbkB3ZItmBKfzSI?usp=drive_link)
 6. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1doq_YQNKEUvvqJtQHH6M4rmAjHnQCtKz?usp=drive_link) - [Exercício 6](https://colab.research.google.com/drive/1doq_YQNKEUvvqJtQHH6M4rmAjHnQCtKz?usp=drive_link)
-   
 
 ### [Lista 2](https://drive.google.com/file/d/1f7_84MQMxpVLfnWGyqY0HREeTB-lOKtv/view?usp=drive_link) - [![PDF](https://img.shields.io/badge/PDF-FF0000?logo=adobeacrobatreader&logoColor=white)](https://drive.google.com/file/d/1f7_84MQMxpVLfnWGyqY0HREeTB-lOKtv/view?usp=drive_link)
 
@@ -36,8 +36,10 @@ Todas as atividades e projetos de Python desenvolvidos durante as aulas estão a
 5. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/146EnZKdFoS_ydQ_KudBZZPMDJv5vGwxp?usp=drive_link) - [Exercício 5](https://colab.research.google.com/drive/146EnZKdFoS_ydQ_KudBZZPMDJv5vGwxp?usp=drive_link)
 6. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/16-JB07p1gfrFSya-YfGeYWi-9oSb4ebx?usp=drive_link) - [Exercício 6](https://colab.research.google.com/drive/16-JB07p1gfrFSya-YfGeYWi-9oSb4ebx?usp=drive_link)
 
+---
 
 ## 4º Período
+
 ### Atividades
 1. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1_ifAi-R-dGBetRXNDIygtT9qis9Qk1em?usp=drive_link) - [Aula 1](https://colab.research.google.com/drive/1_ifAi-R-dGBetRXNDIygtT9qis9Qk1em?usp=drive_link)
 2. [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/19XZrJxDvp267sV7ncRVuh_gqP1CZvUwp?usp=drive_link) - [Aula 2](https://colab.research.google.com/drive/19XZrJxDvp267sV7ncRVuh_gqP1CZvUwp?usp=drive_link)
