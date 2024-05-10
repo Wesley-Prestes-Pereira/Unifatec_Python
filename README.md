@@ -11,6 +11,7 @@ Todas as atividades e projetos de Python desenvolvidos durante as aulas estão a
 4. ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white) - [Aula 4](https://colab.research.google.com/drive/1hz0UohnQJC-fPQOXerx4rCSToTyZyT4i?usp=drive_link) 
 5. ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white) - [Aula 5](https://colab.research.google.com/drive/1Bmhs1sUJQSdsUpTuMcyY5LkNWs96uvj1?usp=drive_link) 
 6. ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white) - [Aula 6](https://colab.research.google.com/drive/10hfNnxWiOnEJcIMReObLRpydwIZTgAkb?usp=drive_link)
+7. ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?logo=googlecolab&logoColor=white) - [Aula 8](https://colab.research.google.com/drive/1LtkgdNTM-HEwgop9k6WfSHFxVwh2Q923?usp=drive_link)
 
 #
 
