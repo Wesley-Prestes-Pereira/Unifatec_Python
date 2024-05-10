@@ -16,4 +16,4 @@ Todas as atividades e projetos de Python desenvolvidos durante as aulas estão a
 #
 
 ### Projetos
-1. [![Projeto 1](https://img.shields.io/badge/Projeto%201-8A2BE2)](https://unifatecpython.streamlit.app){:target="_blank"} - [Dashboard - IMDB](https://unifatecpython.streamlit.app){:target="_blank"}
+1. [![Projeto 1](https://img.shields.io/badge/Projeto%201-8A2BE2)](https://unifatecpython.streamlit.app)- [Dashboard - IMDB](https://unifatecpython.streamlit.app)
