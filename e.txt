@@ -3,25 +3,24 @@
 ## Name of the node
 ## You must choose a name for your node. This name must be unique in
 ## the network you're trying to join.
-
-$my_peerid		= "unique_name";
+$my_peerid = "wes247ubuntuvm427";
 
 ## Local IP address(es) of this node/gateway.
 ## If you want to use IPv4 only, you can leave the IPv6 field empty.
-$my_vpn_ip		= "172.31.0.255";
-$my_vpn_ip6		= "";
+$my_vpn_ip = "177.6.179.28";
+$my_vpn_ip6 = "";
 
 ## Interface for tincd to listen on.
 ## tincd will bind to all interfaces by default.
-$my_ip			= "";
+$my_ip = "";
 
 ## Address family to use, can be ipv4, ipv6, or any
-$my_addressfamily	= "ipv4";
+$my_addressfamily = "ipv4";
 
 ## List of nodes this node should not connect to. You may want to
 ## exclude nodes you are already connected to by some other means.
-@exclude		= ();
-@ignore_subnets		= ("127.0.0.1/8", "::1/128");
+@exclude = ();
+@ignore_subnets = ("127.0.0.1/8", "::1/128");
 
 ## username tincd should su to once it has started up.
 ## This is a mandatory setting. You must ensure your node's private
@@ -30,31 +29,31 @@ $my_addressfamily	= "ipv4";
 ##
 ## It is better to use a non-root user account, but that needs some
 ## non-default setup first.
-$tincd_user    = "root";
+$tincd_user = "root";
 
 ## ===================================================================
 ## You normally do not need to change anything below this line if you
 ## are using a somewhat widespread linux distribution.
 
-$networkname		= "chaos";
-$tincd_bin		= "tincd";
-$routemetric		= "0";
-$routeadd		= "/sbin/ip -4 route add %s metric $routemetric dev \$INTERFACE";
-$routeadd6		= "/sbin/ip -6 route add %s metric $routemetric dev \$INTERFACE";
-$routedel		= "/sbin/ip -4 route del %s metric $routemetric dev \$INTERFACE";
-$routedel6		= "/sbin/ip -6 route del %s metric $routemetric dev \$INTERFACE";
-$ifconfig		= "/sbin/ifconfig \$INTERFACE $my_vpn_ip netmask 255.255.255.255 up";
-$ifconfig6		= "/sbin/ip addr add $my_vpn_ip6/128 dev \$INTERFACE";
+$networkname = "chaos";
+$tincd_bin = "tincd";
+$routemetric = "0";
+$routeadd = "/sbin/ip -4 route add %s metric $routemetric dev \$INTERFACE";
+$routeadd6 = "/sbin/ip -6 route add %s metric $routemetric dev \$INTERFACE";
+$routedel = "/sbin/ip -4 route del %s metric $routemetric dev \$INTERFACE";
+$routedel6 = "/sbin/ip -6 route del %s metric $routemetric dev \$INTERFACE";
+$ifconfig = "/sbin/ifconfig \$INTERFACE $my_vpn_ip netmask 255.255.255.255 up";
+$ifconfig6 = "/sbin/ip addr add $my_vpn_ip6/128 dev \$INTERFACE";
 
-@mergeroutes_supernet	= ("172.31.0.0/16", "10.100.0.0/14");
+@mergeroutes_supernet = ("172.31.0.0/16", "10.100.0.0/14");
 
-$master_url		= "http://www.vpn.hamburg.ccc.de/chaosvpn-data/$my_peerid.dat";
+$master_url = "http://www.vpn.hamburg.ccc.de/chaosvpn-data/$my_peerid.dat";
 
 ## public key used to sign the file at $master_url:
 ## Do not change this unless you get a signed message from
 ## <haegar@ccc.de> explaining why you need to enter a new public key
 ## here. If in doubt, don't change it.
-$masterdata_signkey	= "-----BEGIN PUBLIC KEY-----
+$masterdata_signkey = "-----BEGIN PUBLIC KEY-----
 MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAnSHWfoa9hYgiMrTU4QTS
 uwsspcy7Ml7xVLN8AUtSvb5ORLDR9MfhuVargGxe4CMQ/VLx5gQ064l+P9Zr4fCQ
 Smgwjpza6hbSb++3EfN75QenolvfFLI0X2WAmCs8cgh3B6Li8Ia66xt7/cNDAvQm
@@ -69,17 +68,14 @@ Zas9nZDOJZOHlRDBemRahDebiEpesm5hNf0MWAKQh1vhl2dVCXGCZtF2e4x/594e
 JVw7sWohWm4buu0iKlfPWIsCAwEAAQ==
 -----END PUBLIC KEY-----";
 
-$base			= "/etc/tinc/$networkname";
-$pidfile		= "/var/run/tinc.$networkname.pid";
-$tmpconffile            = "$base/chaosvpn-config.temp";
-$tincd_debuglevel	= 2;
-
-#$tincd_graphdumpfile	= "/var/run/tinc.$networkname.dump";
+$base = "/etc/tinc/$networkname";
+$pidfile = "/var/run/tinc.$networkname.pid";
+$tmpconffile = "$base/chaosvpn-config.temp";
+$tincd_debuglevel = 2;
 
 ## Number of seconds to sleep before tincd is restarted after it has
 ## unexpectedly terminated
 $tincd_restart_delay = 20;
-
 
 ## Number of seconds to sleep between refetching the remote config.
 ## 3600 is a reasonable default.
