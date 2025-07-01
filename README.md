@@ -189,7 +189,7 @@ Este repositório documenta minha jornada de aprendizado em Python na UNIFATEC, 
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=seuusuario&show_icons=true&theme=tokyonight)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Wesley-Prestes-Pereira&show_icons=true&theme=tokyonight)
 
 </div>
 
@@ -213,6 +213,6 @@ Este repositório documenta minha jornada de aprendizado em Python na UNIFATEC, 
 
 **⭐ Se este repositório foi útil, considere dar uma estrela!**
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=seuusuario.seurepositorio)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Wesley-Prestes-Pereira)
 
 </div>
